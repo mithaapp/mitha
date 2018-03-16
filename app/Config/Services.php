@@ -38,9 +38,9 @@
 
 namespace App\Config;
 
-use Mitha\Aprilia\Database\Database as CoreDatabase;
+use Mitha\Aprilia\Config\Services as CoreServices;
 
-class Database extends CoreDatabase
+class Services extends CoreServices
 {
 
 }
