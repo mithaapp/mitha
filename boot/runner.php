@@ -36,11 +36,11 @@
  * @link  https://www.mithaapp.com
  */
 
-namespace App\Config;
+require 'paths.php';
+require 'autoload.php';
+echo 'dd';exit;
+use Mitha\Framework\Mitha;
 
-use Mitha\Framework\Config\Services as CoreServices;
+$app = new Mitha();
 
-class Services extends CoreServices
-{
-
-}
+return $app;

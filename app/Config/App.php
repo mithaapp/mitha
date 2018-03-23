@@ -38,9 +38,9 @@
 
 namespace App\Config;
 
-use Mitha\Aprilia\Config\Config;
+use Mitha\Framework\Config\BaseConfig;
 
-class App extends Config
+class App extends BaseConfig
 {
 
 }

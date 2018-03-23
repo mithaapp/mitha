@@ -35,3 +35,7 @@
  * @license  https://opensource.org/licenses/MIT	MIT License
  * @link  https://www.mithaapp.com
  */
+
+$runner = require '../boot/runner.php';
+
+$runner->run();
