@@ -37,8 +37,9 @@
  */
 
 require 'paths.php';
-require 'autoload.php';
-echo 'dd';exit;
+
+require VENDOR_PATH . 'autoload.php';
+
 use Mitha\Framework\Mitha;
 
 $app = new Mitha();

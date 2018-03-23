@@ -1,7 +1,10 @@
 {
   "name": "mithaapp/mitha",
   "description": "A lightweight PHP framework for developers",
-  "keywords": ["framework", "mitha"],
+  "keywords": [
+    "framework",
+    "mitha"
+  ],
   "type": "project",
   "homepage": "https://www.mithaapp.com",
   "license": "MIT",
@@ -19,8 +22,19 @@
       "role": "Developer"
     }
   ],
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
   "require": {
     "mithaapp/framework": "dev-develop"
   },
-  "minimum-stability": "dev"
+  "repositories": {
+    "packagist.org": {
+      "type": "composer",
+      "url": "https://packagist.org"
+    }
+  },
+  "minimum-stability": "dev-develop"
 }
