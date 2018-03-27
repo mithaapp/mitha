@@ -38,7 +38,7 @@
 
 namespace App\Controllers;
 
-use \Mitha\Aprilia\Controller\Controller;
+use \Mitha\Framework\Controller;
 
 class Home extends Controller
 {

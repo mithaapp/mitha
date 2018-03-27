@@ -40,7 +40,7 @@ require 'paths.php';
 
 require VENDOR_PATH . 'autoload.php';
 
-use Mitha\Framework\Mitha;
+use \Mitha\Framework\Mitha;
 
 $app = new Mitha();
 
