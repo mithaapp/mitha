@@ -36,14 +36,34 @@
  * @link  https://www.mithaapp.com
  */
 
-namespace App\Controllers;
+namespace Config;
 
-use \Mitha\Framework\Controller;
+use Mitha\Framework\Config\AutoloadConfig;
 
-class Home extends Controller
+class Autoload extends AutoloadConfig
 {
-    public function index()
+    public $psr4 = [];
+
+    public $files = [];
+
+    public function __construct()
     {
-       echo view('home');
+        parent::__construct();
+
+        $psr4 = [
+            'App\\' => APP_PATH,
+            'Config\\' => APP_PATH . 'Config',
+        ];
+
+        $files = [];
+
+        //--------------------------------------------------------------------
+        // Do Not Edit Below This Line
+        //--------------------------------------------------------------------
+
+        $this->psr4 = array_merge($this->psr4, $psr4);
+        $this->files = array_merge($this->files, $files);
+
+        unset($psr4, $files);
     }
 }

@@ -36,6 +36,8 @@
  * @link  https://www.mithaapp.com
  */
 
+error_reporting(E_ALL);
+
 $runner = require '../boot/runner.php';
 
 $runner->run();

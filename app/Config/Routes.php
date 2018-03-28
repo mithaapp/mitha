@@ -36,4 +36,9 @@
  * @link  https://www.mithaapp.com
  */
 
-$router->add('', ['controller' => 'Home', 'action' => 'index']);
+$routes->setDefaultNamespace('App\Controllers');
+$routes->setDefaultController('Home');
+$routes->setDefaultMethod('index');
+$routes->set404Override('');
+
+$routes->add('', ['controller' => 'Home', 'action' => 'index']);

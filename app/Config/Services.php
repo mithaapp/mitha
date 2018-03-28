@@ -36,7 +36,7 @@
  * @link  https://www.mithaapp.com
  */
 
-namespace App\Config;
+namespace Config;
 
 use Mitha\Framework\Config\Services as CoreServices;
 

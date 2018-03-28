@@ -36,9 +36,8 @@
  * @link  https://www.mithaapp.com
  */
 
-define('APP_PATH', __DIR__.'/../app/');
-define('BASE_PATH', __DIR__.'/../vendor/mithaapp/framework/src/');
-define('PUBLIC_PATH', __DIR__.'/../public/');
-define('ROOT_PATH', __DIR__.'/../');
-define('STORAGE_PATH', __DIR__.'/../storage/');
-define('VENDOR_PATH', __DIR__.'/../vendor/');
+define('ROOT_PATH', dirname(__DIR__).'/');
+define('APP_PATH', ROOT_PATH.'app/');
+define('PUBLIC_PATH', ROOT_PATH.'public/');
+define('STORAGE_PATH', ROOT_PATH.'storage/');
+define('VENDOR_PATH', ROOT_PATH.'vendor/');
