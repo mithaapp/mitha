@@ -38,6 +38,7 @@
 
 define('ROOT_PATH', dirname(__DIR__).'/');
 define('APP_PATH', ROOT_PATH.'app/');
+define('BASE_PATH', ROOT_PATH.'vendor/mithaapp/framework/src/');
 define('PUBLIC_PATH', ROOT_PATH.'public/');
 define('STORAGE_PATH', ROOT_PATH.'storage/');
 define('VENDOR_PATH', ROOT_PATH.'vendor/');
