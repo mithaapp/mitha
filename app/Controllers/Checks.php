@@ -36,8 +36,15 @@
  * @link  https://www.mithaapp.com
  */
 
-error_reporting(E_ALL);
+namespace App\Controllers;
 
-$runner = require '../boot/runner.php';
-//var_dump($_SERVER);exit;
-$runner->run();
+use Mitha\Framework\Controller;
+
+class Checks extends Controller
+{
+    public function index()
+    {
+        $get = \Config\Services::request()->getGet();
+        print_r($get);
+    }
+}

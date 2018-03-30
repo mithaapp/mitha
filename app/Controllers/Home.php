@@ -44,6 +44,13 @@ class Home extends Controller
 {
     public function index()
     {
-       echo view('home');
+        $data = [
+            'title' => 'Welcome to Mitha Framework',
+            'body' => 'If you see this message, that\'s mean you successfully install mitha framework. Feel free to edit this page!'
+        ];
+
+        echo view('partials/header', $data);
+        echo view('home', $data);
+        echo view('partials/footer', $data);
     }
 }
