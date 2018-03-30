@@ -36,8 +36,9 @@
  * @link  https://www.mithaapp.com
  */
 
-error_reporting(E_ALL);
+namespace Config;
 
-$runner = require '../boot/runner.php';
-
-$runner->run();
+class View
+{
+    public $saveData = true;
+}

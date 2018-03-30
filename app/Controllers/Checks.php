@@ -44,7 +44,7 @@ class Checks extends Controller
 {
     public function index()
     {
-        $get = \Config\Services::request()->getGet();
+        $get = \Config\BaseServices::request()->getGet();
         print_r($get);
     }
 }
