@@ -41,5 +41,5 @@ $routes->setDefaultController('Home');
 $routes->setDefaultMethod('index');
 $routes->set404Override('');
 
-$routes->add('', ['controller' => 'Home', 'action' => 'index']);
+$routes->add('/', ['controller' => 'Home', 'action' => 'index']);
 $routes->add('checks', ['controller' => 'Checks', 'action' => 'index']);
