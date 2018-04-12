@@ -21,7 +21,6 @@
                     <div class="card-body">
                         <?php
                         $trace = $e->getTrace();
-                        print_r($trace);
                         if(!empty($trace)) {
                             foreach ($trace as $item) {
                                 if (isset($item['function'])) {
