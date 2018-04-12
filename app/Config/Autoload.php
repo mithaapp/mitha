@@ -38,7 +38,7 @@
 
 namespace Config;
 
-use Mitha\Framework\Config\AutoloadConfig;
+use Mitha\Config\AutoloadConfig;
 
 class Autoload extends AutoloadConfig
 {

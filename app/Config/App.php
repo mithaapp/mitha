@@ -38,7 +38,7 @@
 
 namespace Config;
 
-use Mitha\Framework\Config\BaseConfig;
+use Mitha\Config\BaseConfig;
 
 class App extends BaseConfig
 {

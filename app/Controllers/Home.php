@@ -38,7 +38,7 @@
 
 namespace App\Controllers;
 
-use \Mitha\Framework\Controller;
+use \Mitha\Controller;
 
 class Home extends Controller
 {

@@ -38,7 +38,7 @@
 
 namespace Config;
 
-use Mitha\Framework\Config\BaseServices;
+use Mitha\Config\BaseServices;
 
 class Services extends BaseServices
 {
