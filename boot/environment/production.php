@@ -36,16 +36,5 @@
  * @link  https://www.mithaapp.com
  */
 
-namespace App\Controllers;
-
-use Mitha\Controller;
-
-class Checks extends Controller
-{
-    public function index()
-    {
-        //$get = \Config\Services::request()->getGet();
-        echo $ggg;
-        echo 'ddd';
-    }
-}
+ini_set('display_errors', 0);
+error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_STRICT & ~E_USER_NOTICE & ~E_USER_DEPRECATED);
