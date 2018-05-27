@@ -40,12 +40,21 @@ namespace App\Controllers;
 
 use Mitha\Controller;
 
-class Checks extends Controller
+class Tests extends Controller
 {
     public function index()
     {
         //$get = \Config\Services::request()->getGet();
         echo $ggg;
-        echo 'ddd';
+        //echo 'ddd';
+        $response = \Config\Services::response();
+        $response->redirect('http://google.com/');
+    }
+
+    public function error404(){
+        echo 'error 404';
+    }
+    public function error500(){
+        echo 'error 500';
     }
 }
