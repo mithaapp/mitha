@@ -38,32 +38,15 @@
 
 namespace Config;
 
-use Mitha\Config\AutoloadConfig;
+use Mitha\Database\Connection;
 
-class Autoload extends AutoloadConfig
+class Database extends Connection
 {
-    public $psr4 = [];
-
-    public $files = [];
-
-    public function __construct()
-    {
-        parent::__construct();
-
-        $psr4 = [
-            'App\\' => APP_PATH,
-            'Config\\' => APP_PATH . 'Config',
-        ];
-
-        $files = [];
-
-        //--------------------------------------------------------------------
-        // Do Not Edit Below This Line
-        //--------------------------------------------------------------------
-
-        $this->psr4 = array_merge($this->psr4, $psr4);
-        $this->files = array_merge($this->files, $files);
-
-        unset($psr4, $files);
-    }
+    public $default = [
+        'hostname' => 'localhost',
+        'username' => '',
+        'password' => '',
+        'database' => '',
+        'charset'  => 'utf8',
+    ];
 }

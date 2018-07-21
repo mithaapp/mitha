@@ -36,6 +36,8 @@
  * @link  https://mitha.app
  */
 
+$_SERVER['MF_ENV'] = 'development';
+
 $runner = require '../boot/runner.php';
 
 $runner->run();

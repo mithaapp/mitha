@@ -38,17 +38,21 @@
 
 namespace App\Controllers;
 
+use Config\Database;
 use Mitha\Controller;
 
 class Tests extends Controller
 {
     public function index()
     {
+        $db = Database::connect();
+        print_r($db);
+        echo 'sss';
         //$get = \Config\Services::request()->getGet();
-        echo $ggg;
+        ///echo $ggg;
         //echo 'ddd';
-        $response = \Config\Services::response();
-        $response->redirect('http://google.com/');
+        //$response = \Config\Services::response();
+        //$response->redirect('http://google.com/');
     }
 
     public function error404(){
