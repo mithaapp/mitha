@@ -41,13 +41,18 @@ namespace App\Controllers;
 use Config\Database;
 use Mitha\Controller;
 
+use PDO;
+
 class Tests extends Controller
 {
     public function index()
     {
         $db = Database::connect();
-        print_r($db);
-        echo 'sss';
+        $data = $db->query('select * from tests')->getResult();
+        print_r($data);
+        //echo $db->escape("fhf@hfh");
+
+        //echo 'sss';
         //$get = \Config\Services::request()->getGet();
         ///echo $ggg;
         //echo 'ddd';
