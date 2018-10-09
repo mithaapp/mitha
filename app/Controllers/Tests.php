@@ -41,15 +41,20 @@ namespace App\Controllers;
 use Config\Database;
 use Mitha\Controller;
 
-use PDO;
-
 class Tests extends Controller
 {
     public function index()
     {
+        k;
+        echo 'coba';
         $db = Database::connect();
-        $data = $db->query('select * from tests')->getResult();
-        print_r($data);
+
+
+        //$data = $db->query('select * from tests')->getRow();
+       // print_r($data);
+        //$db->exec('delete from tests where id=1');
+        //echo $db->exec('insert into tests (name) values ("mitha")')->insertId();
+        //echo $db->insertId();
         //echo $db->escape("fhf@hfh");
 
         //echo 'sss';
