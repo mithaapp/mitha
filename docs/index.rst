@@ -1,4 +1,6 @@
-# Mitha Framework
+###############
+Mitha Framework
+###############
 
 Mitha Framework is an Application Development Framework - a toolkit - for
 people who build web sites using PHP. Its goal is to enable you to
@@ -15,4 +17,4 @@ or completely replaced to make the system work the way you need it to.
 In short, Mitha Framework is the malleable framework that tries to provide
 the tools you need while staying out of the way.
 
-You can access our website on [mitha.app](https://mitha.app/)
+You can access our website on `mitha.app <https://mitha.app/>`_.
