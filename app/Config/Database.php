@@ -45,8 +45,8 @@ class Database extends Connection
     public $default = [
         'hostname' => 'localhost',
         'username' => 'root',
-        'password' => '',
-        'database' => '',
+        'password' => 'nellydho',
+        'database' => 'tests',
         'dbprefix' => '',
         'charset'  => 'utf8',
         'options'  => [],

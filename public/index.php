@@ -36,8 +36,8 @@
  * @link  https://mitha.app
  */
 
-$_SERVER['MF_ENV'] = 'production';
-$_SERVER['MF_CATCH_ERRORS'] = 0;
+$_SERVER['MF_ENV'] = 'development';
+$_SERVER['MF_CATCH_ERRORS'] = 1;
 
 $runner = require '../boot/runner.php';
 

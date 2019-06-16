@@ -45,13 +45,13 @@ class Tests extends Controller
 {
     public function index()
     {
-        k;
         echo 'coba';
         $db = Database::connect();
 
-
+        //$db->update('tests', ['name' => 'coba2'], ['id' => 2]);
+        print_r($db->getAll('tests', ['id' => 2]));
         //$data = $db->query('select * from tests')->getRow();
-       // print_r($data);
+        // print_r($data);
         //$db->exec('delete from tests where id=1');
         //echo $db->exec('insert into tests (name) values ("mitha")')->insertId();
         //echo $db->insertId();
@@ -65,10 +65,13 @@ class Tests extends Controller
         //$response->redirect('http://google.com/');
     }
 
-    public function error404(){
+    public function error404()
+    {
         echo 'error 404';
     }
-    public function error500(){
+
+    public function error500()
+    {
         echo 'error 500';
     }
 }
