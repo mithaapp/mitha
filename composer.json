@@ -1,0 +1,30 @@
+{
+  "name": "mithaapp/mitha",
+  "description": "A lightweight PHP framework for developers",
+  "keywords": [
+    "framework",
+    "mitha"
+  ],
+  "type": "project",
+  "homepage": "https://mitha.app",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mitha Aprilia",
+      "email": "mitha@mithaaprilia.com",
+      "homepage": "http://www.mithaaprilia.com",
+      "role": "Developer"
+    },
+    {
+      "name": "Mutasim Ridlo, S.Kom",
+      "email": "ridho@mutasimridlo.com",
+      "homepage": "http://www.mutasimridlo.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.2",
+    "mithaapp/framework": "dev-develop"
+  },
+  "minimum-stability": "dev"
+}
